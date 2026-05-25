@@ -33,8 +33,8 @@ Create CSS variables for the background color and text color for both dark mode 
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
 
-  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s
-      ease-in-out;
+  --darkModeTransition:
+    color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .dark-theme {
@@ -129,11 +129,11 @@ Finally, you can add CSS to your application to style the components and provide
 #### Dark Theme Class - Code
 
 ```js
-const body = document.querySelector('body');
-body.classList.toggle('dark-theme', newDarkTheme);
+const body = document.querySelector("body");
+body.classList.toggle("dark-theme", newDarkTheme);
 
 // alternative setup
-document.body.classList.toggle('dark-theme', newDarkTheme);
+document.body.classList.toggle("dark-theme", newDarkTheme);
 ```
 
 const body = document.querySelector('body'); - This line selects the body element of the current document using the document.querySelector() method, which returns the first element that matches the specified selector. In this case, it is selecting the body element.
